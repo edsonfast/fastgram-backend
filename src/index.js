@@ -37,6 +37,7 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads', 'resiz
 // Rotas
 app.use(require('./routes'));
 
+// executar no terminal\>yarn dev (ver package.json)
 server.listen(process.env.PORT || 3333, () => {
     console.log('Server started on port 3333!')
 });
